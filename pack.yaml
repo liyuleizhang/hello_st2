@@ -15,7 +15,7 @@ keywords:
 version: 3.3.0
 # A list of major Python versions pack is tested with and works with.
 python_versions:
-  - "2"
+  - "3"
 # New in StackStorm 3.2
 # Specify a list of dependency packs to install. If the pack is in StackStorm Exchange you can use
 # the pack name, or you can specify a full Git repository URL. Optionally, you can specify the
