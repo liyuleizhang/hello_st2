@@ -10,4 +10,9 @@ parameters:
         type: string
         description: greeting输入框提示内容（可中文）
         required: true #此输入框必填提示*
-#        position: 1
+        position: 1
+    ing:
+        type: string
+        description: greeting输入框提示内容（可中文）
+        required: true #此输入框必填提示*
+        position: 1
