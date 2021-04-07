@@ -1,5 +1,5 @@
 ---
-name: greet
+name: greet1
 pack: hello_st2
 runner_type: "local-shell-script" #类型，不可中文
 description: 脚本描述（可中文）
