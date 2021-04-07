@@ -8,6 +8,6 @@ entry_point: greet.sh
 parameters:
     greeting:
         type: string
-        description: Greeting you want to say to StackStorm (i.e. Hello, Hi, Yo, etc.)
+        description: Greeting you want to say to StackStorm (i.e. Hello, Hi, Yo, etc.测试)
         required: true
         position: 1
