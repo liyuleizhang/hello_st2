@@ -2,7 +2,7 @@
 name: greet
 pack: hello_st2
 runner_type: "local-shell-scripti" 
-description: 脚本描述可汉字
+description: ceshi
 enabled: true
 entry_point: greet.sh
 parameters:
