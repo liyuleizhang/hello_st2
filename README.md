@@ -41,6 +41,7 @@ entry_point: greet.sh
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210407-180853.png)
 
 脚本内容
+
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210407-181514.png)
 
 parameters：输入变量
