@@ -9,5 +9,5 @@ parameters:
     greeting:
         type: string
         description: greeting输入框提示内容（可中文）
-        required: true
+#        required: true
         position: 1
