@@ -1,8 +1,8 @@
 ---
 name: greet
 pack: hello_st2
-runner_type: "local-shell-script"
-description: Greet StackStorm!测试
+runner_type: "local-shell-scripti标签"
+description: 脚本描述（可汉字）
 enabled: true
 entry_point: greet.sh
 parameters:
