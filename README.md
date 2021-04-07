@@ -39,9 +39,11 @@ entry_point：执行的shell脚本，脚本文件同本文件在同一目录
 entry_point: greet.sh
 ```
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210407-180853.png)
+
 脚本内容
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210407-181514.png)
-parameters：输入内容
+
+parameters：输入变量
 ```shell
 parameters:  #大栏目名称
     greeting:	#输入框名称
