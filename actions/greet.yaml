@@ -1,7 +1,7 @@
 ---
 name: greet
 pack: hello_st2
-runner_type: "local-shell-script"
+runner_type: "local-shell-script" #类型，不可中文
 description: 脚本描述（可中文）
 enabled: true
 entry_point: greet.sh
