@@ -21,14 +21,23 @@ ref: hello_st2
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-134114.png)
 
 name: pack包名称，只能英文，可以当做说明使用，web页面不显示，安装的时候显示
+
 description: pack包说明，可中文web不显示，安装的时候显示
+
 keywords： 搜索包时使用的关键词
+
 version： pack包版本，自定义，格式0.0.0，安装的时候显示
+
 python_versions： stackstorm使用的python版本，2或者3，版本号不对应安装会失败
+
 dependencies：依赖包存放目录，在根目录下的core文件夹内，如不需要依赖，本段可注释
+
 author: 脚本作者名称，可中文，安装的时候显示
+
 email: 脚本作者邮箱账号
+
 contributors： 支持此pack包的其他人信息，可注释
+
 ```shell
 name: Hello StackStorm
 description: Simple pack containing examples of sensor, rule, and action.
