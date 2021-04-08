@@ -10,7 +10,7 @@ actions文件夹内的yaml文件为pack中的脚本，每一个文件为一个�
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210407-174603.png)
 
 name：为脚本名称
-pack：所属pack，一般为pack文件夹名称
+pack：所属pack，一般为pack文件夹名称,可不写
 ```shell
 name: greet
 pack: hello_st2
