@@ -5,8 +5,51 @@ st2 pack install https://github.com/liyuleizhang/hello_st2.git
 ```
 
 ## 文件说明
-### 脚本执行文件actions/greet.yaml
-actions文件夹内的yaml文件为pack中的脚本，每一个文件为一个脚本，文件名任意，非中文
+### 1.pack包图片icon.png
+icon.png文件名固定,位置必须pack包根目录下
+![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-133504.png)
+
+![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-133929.png)
+### 2.pack包信息文件pack.yaml
+pack.yaml文件名固定,位置必须pack包根目录下
+![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-133219.png)
+
+ref: pack包名称，只能英文，建议与github库名称一致
+```shell
+ref: hello_st2
+```
+![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-134114.png)
+
+name: pack包名称，只能英文，可以当做说明使用，web页面不显示，安装的时候显示
+description: pack包说明，可中文web不显示，安装的时候显示
+keywords： 搜索包时使用的关键词
+version： pack包版本，自定义，格式0.0.0，安装的时候显示
+python_versions： stackstorm使用的python版本，2或者3，版本号不对应安装会失败
+dependencies：依赖包存放目录，在根目录下的core文件夹内，如不需要依赖，本段可注释
+author: 脚本作者名称，可中文，安装的时候显示
+email: 脚本作者邮箱账号
+contributors： 支持此pack包的其他人信息，可注释
+```shell
+name: Hello StackStorm
+description: Simple pack containing examples of sensor, rule, and action.
+keywords:
+    - example
+    - test
+version: 3.3.0
+python_versions:
+  - "3"
+dependencies:
+  - core
+author: StackStorm, Inc.
+email: info@stackstorm.com
+contributors:
+  - "John Doe1 <john.doe1@gmail.com>"
+  - "John Doe2 <john.doe2@gmail.com>"
+```
+![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-135245.png)
+
+### 3.脚本执行文件actions/greet.yaml
+actions文件夹内的yaml文件为pack包中的脚本，每一个文件为一个脚本，文件名任意，非中文
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210407-174603.png)
 
 name：为脚本名称
