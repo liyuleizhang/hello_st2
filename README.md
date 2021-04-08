@@ -153,7 +153,7 @@ echo "输入了:$1!"
 ```shell
 docker-compose exec st2client st2 pack install https://github.com/liyuleizhang/st2test.git
 ```
-![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-151117.png.png)
+![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-151117.png)
 
 在web页面依次单击ACTIONS---找到ST2TEST---单击echo---在echo输入框中输入随意内容---单击RUN运行
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/1617868758979.jpg)
