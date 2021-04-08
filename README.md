@@ -50,7 +50,7 @@ parameters:  #大栏目名称
     greeting:	#输入框名称
         type: string	#未测试
         description: greeting输入框提示内容（可中文）
-        required: true #此输入框必填提示*
+        required: true #出现必填提示提示*，true和false
         position: 1	#输入内容在脚本中命名为1，如上图可在greet.sh脚本中用$1带入输入内容
 ```
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210407-181357.png)
