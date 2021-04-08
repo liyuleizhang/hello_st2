@@ -108,7 +108,7 @@ parameters:  #大栏目名称
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210407-181357.png)
 
 ### 4.编写第一个pack
-根据上面学习的内容，通过icon.png、pack.yaml、actions/*.yaml、actions/*.sh四个文件创建自己的第一个pack包
+根据上面学习的内容，通过icon.png、pack.yaml、actions/echo.yaml、actions/echo.sh四个文件创建自己的第一个pack包
 
 pack.yaml
 ```shell
@@ -125,7 +125,7 @@ python_versions:
 author: 张三
 email: zhangsan@163.com.com
 ```
-actions/echo_file.yaml
+actions/echo.yaml
 ```shell
 ---
 name: echo
@@ -141,7 +141,7 @@ parameters:
         position: 1
 ```
 
-actions/echo_file.sh
+actions/echo.sh
 ```shell
 #!/bin/bash
 echo "输入了:$1!"
