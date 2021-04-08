@@ -106,3 +106,57 @@ parameters:  #大栏目名称
         position: 1	#输入内容在脚本中命名为1，如上图可在greet.sh脚本中用$1带入输入内容
 ```
 ![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210407-181357.png)
+
+### 4.编写第一个pack
+根据上面学习的内容，通过icon.png、pack.yaml、actions/*.yaml、actions/*.sh四个文件创建自己的第一个pack包
+
+pack.yaml
+```shell
+---
+ref: st2test
+name: st2 test 
+description: 测试StackStorm的pack包                                      
+keywords:
+    - example
+    - test
+version: 0.0.1
+python_versions:
+  - "3"
+author: 张三
+email: zhangsan@163.com.com
+```
+actions/echo_file.yaml
+```shell
+---
+name: echo
+runner_type: "local-shell-script"
+description: 输出填入的echo内容
+enabled: true
+entry_point: echo.sh
+parameters:
+    echo:
+        type: string
+        description: 请输入任意内容，运行后将输出此内容
+        required: true
+        position: 1
+```
+
+actions/echo_file.sh
+```shell
+#!/bin/bash
+echo "输入了:$1!"
+```
+
+在github中创建名称为pack.yaml文件下ref名称st2test的库，将icon.png、pack.yaml、actions/echo_file.yaml、actions/echo_file.sh四个文件上传到github的st2test库中
+
+通过如下命令在StackStorm中安装st2test的pack包
+```shell
+docker-compose exec st2client st2 pack install https://github.com/liyuleizhang/st2test.git
+```
+![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-151117.png.png)
+
+在web页面依次单击ACTIONS---找到ST2TEST---单击echo---在echo输入框中输入随意内容---单击RUN运行
+![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/1617868758979.jpg)
+
+在web页面依次单击HISTORY---找到st2test.echo---查看ACTION OUTPUT
+![Image text](https://raw.githubusercontent.com/liyuleizhang/img/main/hello_st2/WX20210408-160108.png)
